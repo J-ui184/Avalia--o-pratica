@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria do Bairro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container">
+      <h1>Pizzaria do Bairro</h1>
+      <nav class="menu">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#pedido">Fazer Pedido</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="cardapio" class="secao">
+      <h2>Nosso Cardápio</h2>
+      <p>Pizzas artesanais feitas na hora. Pedidos a partir de 5 pizzas ganham 10% de desconto!</p>
+
+      <div class="lista-pizzas">
+        <div class="card">
+          <h3>Calabresa</h3>
+          <p>Molho de tomate, mussarela, calabresa e cebola.</p>
+          <span class="preco">R$ 45,00</span>
+        </div>
+
+        <div class="card">
+          <h3>Mussarela</h3>
+          <p>Molho de tomate, bastante mussarela e orégano.</p>
+          <span class="preco">R$ 40,00</span>
+        </div>
+
+        <div class="card">
+          <h3>Frango com Catupiry</h3>
+          <p>Molho de tomate, frango desfiado e catupiry.</p>
+          <span class="preco">R$ 50,00</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedido" class="secao">
+      <h2>Simulador de Pedido</h2>
+
+      <form id="form-pedido" class="formulario">
+        <div class="campo">
+          <label for="nome">Seu nome:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome">
+        </div>
+
+        <div class="campo">
+          <label for="sabor">Escolha a pizza:</label>
+          <select id="sabor">
+            <option value="">-- Selecione --</option>
+            <option value="calabresa">Calabresa - R$ 45,00</option>
+            <option value="mussarela">Mussarela - R$ 40,00</option>
+            <option value="frango">Frango com Catupiry - R$ 50,00</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="quantidade">Quantidade (1 a 50):</label>
+          <input type="number" id="quantidade" placeholder="Ex: 2">
+        </div>
+
+        <button type="submit" class="botao">Calcular Pedido</button>
+      </form>
+
+      <div id="resultado" class="resultado"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Pizzaria do Bairro - Desenvolvido por João Pedro</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
